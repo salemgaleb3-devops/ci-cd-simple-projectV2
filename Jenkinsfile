@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_USER = "salemghaleb"
-        IMAGE_NAME = "${DOCKERHUB_USER}/myflaskapp:latest"
+        IMAGE_NAME = "${DOCKERHUB_USER}/myflaskapp:${BUILD_NUMBER}"
         CONTAINER_NAME = "myflaskcontainer"
         DOCKER_CREDENTIALS = "dockerhub-creds"
     }
